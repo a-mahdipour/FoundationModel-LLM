@@ -86,4 +86,4 @@ These models are designed to excel in particular domains, such as NVIDIA's BioBE
 These categories are determined by the specific data sources provided to the models, influencing their efficacy and performance across various applications.
 
 ![alt text](image5.jpeg)
-
+[pic ref: theaidream.com]
