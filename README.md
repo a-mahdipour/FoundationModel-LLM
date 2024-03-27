@@ -74,13 +74,13 @@ Notable LLMs making strides in the AI field include:
 
 These LLMs exemplify advancements in AI, each offering unique capabilities and accessibility, shaping the landscape of NLP and text generation.
 
-![alt text](image4.gif)
+![alt text](image4.jpeg)
 ______
 
 Previously, we explored the role of Large Language Models (LLMs) within the hierarchy of foundation models and introduced key types of LLMs. Let's delve deeper into general-purpose LLMs, which have the capability to handle a wide array of applications spanning human and machine languages. These LLMs can be broadly categorized into two groups (fine-tuned models according to their specific data sources):
-(a) Task-specific LLMs:
+* Task-specific LLMs:
 These models are tailored to perform specific tasks, such as Meta's code Llama for generating programming codes and Snowflake Copilot for SQL code generation.
-(b) Domain-specific LLMs:
+* Domain-specific LLMs:
 These models are designed to excel in particular domains, such as NVIDIA's BioBERT for biomedical applications and XLNet by Google and Carnegie Mellon University for diverse language translation and generation.
 
 These categories are determined by the specific data sources provided to the models, influencing their efficacy and performance across various applications.
