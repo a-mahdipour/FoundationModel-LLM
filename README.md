@@ -87,3 +87,27 @@ These categories are determined by the specific data sources provided to the mod
 
 ![alt text](image5.jpeg)
 [pic ref: theaidream.com]
+
+_____
+
+In contrast to traditional AI systems that mostly use neural networks (applying complex CNN or RNN models) as the main tool, Gen AI systems use transformers through attention mechanism that orchestrates **encoders** (that understand inputs) and **decoders** (which provide outputs) to work together and capture long-range dependencies within the input sequence and use that information to generate appropriate output sequences. By jointly training the encoder and decoder components, transformer models can effectively learn to map input sequences to output sequences across a wide range of NLP tasks (see bellow pic on attention in neural machine translation).
+
+![alt text](image6.jpeg)
+[pic ref:(https://lnkd.in/gbh5hnM7)]
+
+__________
+
+How a LLM agent work and how it can be optimized?
+
+LLMs operate by receiving human instructions, known as prompts, and leveraging their specified models (inferences) along with software libraries and APIs to generate text resembling human output, returning the results as completions. 
+
+To refine the generated results, we can tailor and refine the learning process through:
+1- Prompt engineering
+2- In-context learning (hashtag#icl)
+3- Retrieval-Augmented Generation (hashtag#rag)
+4- Employing reinforcement learning with human feedback (hashtag#rlhf)
+5- Fine-tuning LLM model parameters
+6- Providing access to a vector database for enhanced learning.
+
+![alt text](image7.jpeg)
+[pic ref: heidloff.net]
