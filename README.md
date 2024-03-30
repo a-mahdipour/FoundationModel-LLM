@@ -111,3 +111,89 @@ To refine the generated results, we can tailor and refine the learning process t
 
 ![alt text](image7.jpeg)
 [pic ref: heidloff.net]
+
+_________
+## How to customize foundation models
+Let's unlock the secrets of customizing foundation models to suit your specific needs. Understanding when and how to tune these models is crucial for optimal performance.
+
+### Deciding When to Tune Your Model
+Starting Point: Begin with prompt engineering using the largest suitable Language Model (LLM) for your task to gauge if LLMs can handle it. Experiment with various prompt formats and examples.
+
+#### Prompting Techniques:
+* Zero-Shot Prompting:
+
+Efficiency with No Extra Data: This involves giving a natural language prompt to generate desired outputs without additional training data.
+
+Example: "Provide a summary of the following passage: [insert text]."
+
+* One-Shot Prompting:
+
+A Single Example to Guide: Introduce one example along with your prompt to demonstrate the desired outcome.
+
+Example: "Write marketing copy for WorkoutFuel protein shakes in an enthusiastic, punchy voice," along with a high-energy example text.
+
+* Few-Shot Prompting:
+
+Leveraging a Few Examples: Provide a handful of examples to establish the pattern or style for the model to replicate.
+
+Example: To generate meeting summaries, give 2-3 examples before asking the model to create new ones.
+
+
+### Data-Driven Tuning for Deeper Customization
+* Fine-Tuning: Adjusting model weights on a specific dataset to cater to your unique objectives, like customizing tone or addressing complex prompts.
+
+* Parameter-Efficient Fine-Tuning (PEFT): Delta tuning updates only a small subset of parameters, offering a faster, cost-effective alternative to traditional fine-tuning.
+
+
+### PEFT Techniques:
+Parameter-Efficient Fine-Tuning (PEFT) is a more cost-effective and efficient method because it focuses on optimizing a small subset of model parameters, reducing computational resources and training time while maintaining high-performance levels. There are multiple techniques:
+
+* Prefix Tuning: Attaches vectors with free parameters to input embeddings, training them while keeping the LLM frozen.
+
+* Prompt Tuning: A simpler variant of prefix tuning, adding a vector only at the input layer.
+
+* P-Tuning: Automates the search and optimization of prompts using an LSTM model.
+
+* LoRA: Low-Rank Adaptation adds update matrices to existing weights, training these new weights.
+
+### Choosing the Right Technique:
+Goal-Oriented Approach: Select the customization method based on your specific goals and the data you have. For instance, zero-shot and few-shot prompting work well with minimal data, while data-driven tuning is ideal for more complex, data-rich tasks.
+
+Customizing foundation models can significantly enhance their performance on specific tasks, making them more aligned with your business objectives.
+_________
+## The most popular LLMs available
+Let's navigate the world of Large Language Models (LLMs) by understanding the key differences between open-source and proprietary models and services, and exploring some of the most popular LLMs available today.
+
+### Open Source LLMs:
+Accessible and Collaborative: These models are freely available for use, modification, and distribution, promoting community-driven development and innovation.
+
+Examples of Open Source LLMs:
+
+GPT-Neo/GPT-J: Developed by EleutherAI, these models are open-source alternatives to OpenAI's GPT models, offering similar capabilities.
+
+BERT: Developed by Google, BERT has been a groundbreaking model for understanding context in natural language, widely used in various applications.
+
+I listed the Top Open Source LLMs a few weeks back on Linkedin. Here's the ​link​
+
+
+### Closed Source LLMs:
+Commercial and Proprietary: These models are developed and maintained by private entities, often requiring licenses or subscriptions for access.
+
+Examples of Closed Source LLMs:
+
+OpenAI's GPT-3/GPT-4: Known for their advanced capabilities, these models have set benchmarks in generative AI but are accessible mostly through API with usage costs.
+
+Google's LaMDA: A cutting-edge model designed for conversational AI, used internally by Google.
+
+
+### The Game Changer: Llama 2
+* Accessibility and Versatility: Meta's Llama 2 has been released as an open-source AI model, making it accessible for everyone from startups to researchers. Its availability in different sizes (7B, 13B, 70B-parameter models) offers a range of options for fine-tuning and deployment.
+
+* Innovation and Privacy: As an open-source model, Llama 2 removes barriers to AI adoption and addresses data privacy concerns by allowing private hosting and customization with your own data.
+
+* Performance Benchmarking: Llama 2 stands on par with models like GPT-3.5 in terms of performance, particularly excelling in generating helpful responses for prompts. However, it shows less proficiency in coding tasks compared to other specialized models.
+
+* Cost and Community Benefits: Meta’s open-sourcing of Llama 2, despite the substantial development cost, taps into the collective wisdom of the global AI community, accelerating innovation and potentially leveling the playing field against closed-source counterparts.
+
+#### Why the Distinction Matters: 
+Understanding the differences between open source and closed source LLMs is crucial for businesses and developers. Open source models offer transparency and the opportunity for customization, while closed source models, often backed by significant resources and research, provide robust, state-of-the-art capabilities but with usage restrictions and costs.
