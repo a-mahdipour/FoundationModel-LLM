@@ -234,7 +234,7 @@ Understanding the GenAI Architecture: This system includes data pipelines, train
 
 Understanding and utilizing the components of the GenAI stack is key for businesses looking to leverage AI for innovative applications. This modular approach allows for customization and scalability, fitting various business needs and goals.
 
-![alt text](image8.jpeg)[
-[pic ref:(](https://newsletter.nocode.ai/p/generative-ai-development-stack)]
+![alt text](image8.jpeg)
+[pic ref: https://newsletter.nocode.ai/p/generative-ai-development-stack]
 
 
