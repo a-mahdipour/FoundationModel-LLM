@@ -312,7 +312,7 @@ In traditional machine learning, individual siloed models require task-specific 
 In contrast, foundation models are massive multi-tasking systems, adaptable with little or no additional training, utilizing pre-trained, self-supervised learning techniques. The limit on performance & capabilities is mostly on computing and data access (not labeling).
 
 ![alt text](image10.jpeg)
-[pic ref: medium.com]
+[pic ref: https://newsletter.nocode.ai/p/generative-ai-development-stack]
 
 ### Synthetic Data
 If the limit to a better model is more data, why don't create it artificially? The rise of synthetic data is a game-changer. It's about creating artificial datasets that can train AI without compromising privacy or relying on scarce real-world data. This innovation is set to revolutionize fields from healthcare to autonomous driving, making AI training more accessible, ethical, and comprehensive.
@@ -324,7 +324,7 @@ We will see increased usage of synthetic data because it overcomes data scarcity
 Multimodality is the future of AI's interaction with the world. By integrating text, image, sound, and more, AI can understand and respond to complex queries with unprecedented accuracy. This holistic approach will deepen AI's integration into daily life, from smarter virtual assistants to more intuitive educational tools.
 
 ![alt text](image11.jpeg)
-[pic ref: medium.com]
+[pic ref: https://newsletter.nocode.ai/p/generative-ai-development-stack]
 
 ### Reinforcement Learning
 Want to take it to the next level? What if you could train the AI without data? Meet Reinforcement Learning, a technique poised to make significant strides. By learning through trial and error, AI systems will become more autonomous and capable of solving complex, real-world problems. This means smarter algorithms in everything from financial forecasting to climate change modeling.
