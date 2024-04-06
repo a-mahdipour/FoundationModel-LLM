@@ -311,7 +311,7 @@ In traditional machine learning, individual siloed models require task-specific 
 
 In contrast, foundation models are massive multi-tasking systems, adaptable with little or no additional training, utilizing pre-trained, self-supervised learning techniques. The limit on performance & capabilities is mostly on computing and data access (not labeling).
 
-![alt text](image11.jpeg)
+![alt text](image10.jpeg)
 [pic ref: medium.com]
 
 ### Synthetic Data
@@ -332,7 +332,7 @@ Want to take it to the next level? What if you could train the AI without data? 
 
 Check out this video to see a demonstration of Reinforcement Learning in action:
 
-[Multi-Agent Hide and Seek]([https://www.imdb.com/title/tt1375666/](https://www.youtube.com/watch?v=kopoLzvh5jY))
+[Multi-Agent Hide and Seek](https://www.youtube.com/watch?v=kopoLzvh5jY)
 
 ### Giving Tools to AI
 In the next decade, AI will evolve beyond being just a tool to becoming a creator of tools. We will see AI designing software, crafting algorithms, and contributing to AI research. AI agents will autonomously manage projects in a continuous loop, executing tasks, enhancing results, and generating new tasks based on objectives and past outcomes. Their workflow will include task execution, result enrichment, task creation, and prioritization. Equipped with integration capabilities, these agents will be able to search for information in CRMs, access databases, send emails, and more. Frameworks like BabyAGI and Auto-GPT are already emerging to test these concepts.
