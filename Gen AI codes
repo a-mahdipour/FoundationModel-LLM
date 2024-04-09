@@ -1,0 +1,21 @@
+### BLEU score for text-generation
+'''
+BLEU (Bilingual Evaluation Understudy) is a metric used to evaluate the quality of machine-generated text, 
+particularly in the context of machine translation. It measures the similarity between the generated text and a reference (human-generated) text. 
+The BLEU score ranges from 0 to 1, with higher scores indicating better quality translations.
+Here's a Python code snippet to implement BLEU score calculation using the nltk library:
+'''
+from nltk.translate.bleu_score import corpus_bleu
+from nltk.translate.bleu_score import sentence_bleu
+
+# Example reference and candidate sentences
+reference = [['the', 'quick', 'brown', 'fox', 'jumped', 'over', 'the', 'lazy', 'dog']]
+candidate = ['the', 'fast', 'brown', 'fox', 'jumped', 'over', 'the', 'lazy', 'dog']
+
+# Calculate BLEU score for a single sentence
+print("BLEU Score (Single Sentence):", sentence_bleu(reference, candidate))
+
+# Calculate BLEU score for a corpus of sentences
+references = [[['the', 'quick', 'brown', 'fox', 'jumped', 'over', 'the', 'lazy', 'dog']]]
+candidates = [['the', 'fast', 'brown', 'fox', 'jumped', 'over', 'the', 'lazy', 'dog']]
+print("BLEU Score (Corpus):", corpus_bleu(references, candidates))
