@@ -380,4 +380,4 @@ Bringing Language Model (LLM) into production involves several key steps to ensu
 * 8- Security and compliance: to protect the language model and associated data from unauthorized access or misuse via relevant regulations and standards (data privacy laws, industry-specific requirements and so on).
 
 ![alt text](image14.jpeg)
-[pic ref: assemblyai.com] 
+[pic ref: sreent.medium.com] 
