@@ -399,3 +399,22 @@ Feature injection for a Large Language Model (LLM) agent involves augmenting the
 ![alt text](image15.jpeg)
 [pic ref: I.C. Hsu & J.D. Yu, Multimedia Tools and Applications, Springer 81, 2022] 
 
+
+----
+## How to compare diverse LLM agents against their capabilities/applications?
+
+
+
+A well-known tool is **`LMSYS Chatbot Arena'** which is an open-source platform that evaluates LLMs with respect to their alignment to human preferences (via human pairwise comparisons) applying the Bradley-Terry model via ranking in Elo-scale. More details can be found in this paper "Chatbot Arena: An Open Platform for Evaluating LLMs by Human Preference" by Wei-Lin Chiang et al. The comparison can be performed through this website: chat.lmsys.org.
+
+
+The __ELO score__ refers to a rating system used to assess the relative skill levels of AI models/agents in competitive scenarios, such as in providing text outputs, games or even simulations. The ELO score is named after its creator, Arpad Elo, and is commonly used in chess to rank players based on their performance against each other. Another application is to rank different AI models based on the aesthetic quality of the generated images as assessed by human judges or other objective criteria. 
+
+
+Overall, Arena ELO rating assists researchers/developers to identify and prioritize the most effective or creative AI models for further development and/or deployment (pic ref report as of today, April 22, 2024).
+
+![alt text](image17.jpeg)
+[pic ref: chat.lmsys.org/?leaderboard] 
+
+---
+
