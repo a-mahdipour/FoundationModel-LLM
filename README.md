@@ -74,7 +74,7 @@ Notable LLMs making strides in the AI field include:
 
 These LLMs exemplify advancements in AI, each offering unique capabilities and accessibility, shaping the landscape of NLP and text generation.
 
-![alt text](image4.jpeg)
+![alt text](image4_1.jpeg)
 ______
 
 Previously, we explored the role of Large Language Models (LLMs) within the hierarchy of foundation models and introduced key types of LLMs. Let's delve deeper into general-purpose LLMs, which have the capability to handle a wide array of applications spanning human and machine languages. These LLMs can be broadly categorized into two groups (fine-tuned models according to their specific data sources):
