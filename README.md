@@ -417,4 +417,14 @@ Overall, Arena ELO rating assists researchers/developers to identify and priorit
 [pic ref: chat.lmsys.org/?leaderboard] 
 
 ---
+## What does an AI-agent orchestration do? 
+
+By orchestration in an AI agent, we usually mean the process of organizing agents based on defined objectives and selected models, coordinating input and output for each of the selected models and then agent-to-agent data/info flow management. 
+
+Within LLM operations (LLMOps) tools, each AI agent (as instances of LLMs) to perform specific tasks can be coordinated with other components such as external applications though such orchestration frameworks. 
+
+Orchestration library is a subtype of AI-agent orchestration that provides efficient access to external data as well as other APIs connected to the AI-agent. This is usually done by utilizing RAG to keep the model updated via current information. 
+
+![alt text](image18.jpeg)
+[pic ref: medium.com] 
 
