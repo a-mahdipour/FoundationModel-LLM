@@ -1,0 +1,42 @@
+'''
+Self-attention, also known as scaled dot-product attention, is a mechanism used in transformer models to weigh the importance of different parts of an input sequence when producing an output sequence. Here's a detailed explanation along with a Python snippet demonstrating how self-attention works:
+
+Key Concepts:
+Query, Key, and Value: Each input element is associated with three vectors: query, key, and value. These vectors are linear transformations of the input embeddings.
+Attention Scores: The attention score between a query and a key determines how much focus to place on the corresponding value.
+Scaled Dot-Product Attention: Attention scores are computed by taking the dot product of the query with all keys, then scaling by the square root of the dimension of the key vectors, and applying a softmax function to obtain the attention weights.
+Weighted Sum: The output is the weighted sum of the values, where the weights are determined by the attention scores.
+Python Snippet:
+Below is a Python code snippet demonstrating how to perform self-attention:
+'''
+
+import torch
+import torch.nn.functional as F
+
+# Define input sequence and embedding dimension
+sequence_length = 5
+embedding_dim = 4
+inputs = torch.randn(1, sequence_length, embedding_dim)  # Batch size x Sequence length x Embedding dimension
+
+# Define linear transformations for query, key, and value
+W_q = torch.randn(embedding_dim, embedding_dim)
+W_k = torch.randn(embedding_dim, embedding_dim)
+W_v = torch.randn(embedding_dim, embedding_dim)
+
+# Compute query, key, and value vectors
+queries = torch.matmul(inputs, W_q)
+keys = torch.matmul(inputs, W_k)
+values = torch.matmul(inputs, W_v)
+
+# Compute attention scores
+attention_scores = torch.matmul(queries, keys.transpose(-2, -1)) / torch.sqrt(torch.tensor(embedding_dim).float())
+
+# Apply softmax to get attention weights
+attention_weights = F.softmax(attention_scores, dim=-1)
+
+# Compute weighted sum of values
+weighted_sum = torch.matmul(attention_weights, values)
+
+print("Input Sequence:", inputs)
+print("Attention Weights:", attention_weights)
+print("Weighted Sum:", weighted_sum)
