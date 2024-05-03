@@ -469,4 +469,24 @@ CNNs are generally stable during training but may require careful initialization
 
 _In summary, self-attention models offer several advantages over traditional neural network architectures like RNNs and CNNs, particularly in capturing long-range dependencies, parallelization, interpretability, and training stability. However, the choice of model depends on the specific requirements of the task and the nature of the data._
 
+-----
+
+## Transformers through an advanced lens
+
+
+As a particular type of deep learning techniques, sequence-to-sequence models that accepts a sequence of items (letter, word, sentence, features of an image, frames of a video, ...) as input and returns another  sequence of items as output. This models play crucial roles in machine translation, text summarization, and image captioning (e.g. Google Translate in 2016). The pioneer researches on such models can be found in [Sutskever et al., 2014] and [Cho et al., 2014].
+
+
+One important type of sequence-to-sequence models is recurrent neural network (RNN). RNNs have provided import solutions to NLP challenges. However, RNNs are generally slow in training sequences while processing one element at a time and maintaining a hidden state to capture information from previous elements. Another failure aspect of RNN models associates with the vanishing gradient problem (as common issue in NNs). 
+
+
+Long-short-term memory (LSTM) as a type of RNN can handle the vanishing gradient problem, but is not highly effective for longer sequences and could be even slower than traditional RNN models. 
+
+
+To solve all above restrictions, transformers have been provided that work with 'self-attention' mechanism. Self-attention, in fact, attends diverse parts of the input sequence at different times without any further need of external inputs. Transforms can solve the issue with vanishing gradient problem via using multi-headed attention model (using several self-attentions), but also efficiently use GPUs for parallelized version of the input sequences and excel the training process.
+
+
+![alt text](image22.gif)
+[pic ref: medium.com] 
+
 
