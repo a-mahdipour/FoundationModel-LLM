@@ -7,4 +7,4 @@ Uses API for partitioning & chunking, FAISS for vector store, huggingface for th
 
 It's a collab notebook so it's easy to get started!
 
-See the method in: https://colab.research.google.com/drive/1BJYYyrPVe0_9EGyXqeNyzmVZDrCRZwsg?usp=sharing#scrollTo=fKS2grloNhrM
+See the method in this link {cite}'https://colab.research.google.com/drive/1BJYYyrPVe0_9EGyXqeNyzmVZDrCRZwsg?usp=sharing#scrollTo=fKS2grloNhrM'
