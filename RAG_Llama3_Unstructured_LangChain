@@ -1,0 +1,10 @@
+In this quick tutorial, we'll build a simple RAG system with the latest LLM from Meta - Llama 3, specifically the `Llama-3-8B-Instruct` version that you can get on Hugging Face.
+We'll use [Unstructured API](https://unstructured.io/) for preprocessing PDF files, LangChain for RAG, FAISS for vector storage, and HuggingFace `transformers` to get the model.
+
+Build a RAG system with Llama 3B-Instruct for your PDFs
+
+Uses API for partitioning & chunking, FAISS for vector store, huggingface for the model
+
+It's a collab notebook so it's easy to get started!
+
+See the method in: https://colab.research.google.com/drive/1BJYYyrPVe0_9EGyXqeNyzmVZDrCRZwsg?usp=sharing#scrollTo=fKS2grloNhrM
