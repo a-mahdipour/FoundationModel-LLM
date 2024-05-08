@@ -489,4 +489,30 @@ To solve all above restrictions, transformers have been provided that work with 
 ![alt text](image22.gif)
 [pic ref: medium.com] 
 
+---
+## Attention vs Self-attention in Transformers:
+
+
+Attention mechanism: enables models to focus on crucial parts of the input, mimicking human perception. They facilitate understanding by capturing long-range context and relationships within data focusing on relationships between input and output sequences. Despite their effectiveness, attention mechanisms face scalability challenges.
+
+Self-attention mechanism: focuses on a single sequence, allowing a model to learn about itself. Unlike regular attention, it relates input to output within the same sequence. 
+
+Self-attention can be realized through diverse kernel (score) functions, offering a range of types. Among these, the softmax function stands out as a commonly employed choice, referred to as scaled-dot product attention (SDP) (for more details see [Vaswani et al. Proc. NeurIPS 2017] and [Lin et al: arXiv:2106.04554v2]).
+
+![alt text](image24.jpeg)
+[pic ref: medium.com] 
+
+To avoid the complexity of SDP,  we note that some tokens may are less crucial; not all parts of the input sequence requires equal attention and thus there are some methodologies to simplify SDPs (more details in medium.com): 
+
+
+1- Sparse attention: sparsifies the attention matrix 
+
+2- Matrix factorization: decomposes and approximates the attention matrix with a lower-rank matrix without losing too much information.
+
+3- Locality-sensitive hashing: computes nearest-neighbor search from the attention matrix to choose related tokens.
+
+4- Kernel attention: considers the softmax function as a kernel for computing the self-attention matrix more efficiently.
+
+![alt text](image23.gif)
+[pic ref: medium.com] 
 
