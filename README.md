@@ -516,3 +516,32 @@ To avoid the complexity of SDP,  we note that some tokens may are less crucial; 
 ![alt text](image23.gif)
 [pic ref: medium.com] 
 
+
+---
+## Non-NLP generative models
+They are algorithms that can generate new data samples resembling the characteristics of the training data without being specifically tailored for natural language processing (NLP) tasks. Some examples of non-NLP generative models include:
+
+* Generative Adversarial Networks (GANs): GANs consist of two neural networks, a generator and a discriminator, which are trained simultaneously through a min-max game. The generator learns to produce realistic samples from random noise, while the discriminator learns to distinguish between real and generated samples. GANs have been used for generating realistic images, videos, and music.
+* Variational Autoencoders (VAEs): VAEs are probabilistic models that learn to encode and decode data samples in a latent space. They consist of an encoder network that maps input data to a latent space and a decoder network that reconstructs the input data from latent representations. VAEs are used for generating new images, text, and other types of data.
+* Normalizing Flows: Normalizing flows are generative models that learn invertible transformations to map a simple distribution (e.g., Gaussian) to a complex data distribution. By applying these transformations to random noise samples, normalizing flows can generate new data samples with desired characteristics. Diffusion models are a type of normalizing flow model that models the evolution of data density over time.
+* Autoregressive Models: Autoregressive models predict the probability distribution of each feature in a data sample conditioned on previous features. By sampling from these conditional distributions iteratively, autoregressive models can generate new data samples one element at a time. Examples of autoregressive models include PixelCNN and WaveNet.
+* Boltzmann Machines: Boltzmann Machines are stochastic neural networks that model the joint distribution of binary variables. They use a Markov chain Monte Carlo (MCMC) sampling approach to generate new data samples by exploring the energy landscape of the model. Boltzmann Machines are used in various applications, including image generation and collaborative filtering.
+These non-NLP generative models have applications in diverse domains such as computer vision, audio generation, molecular design, and anomaly detection. They offer powerful tools for synthesizing new data samples and exploring the underlying structure of complex datasets.
+
+---
+## Transformers vs. diffusion models 
+Both are both powerful frameworks in machine learning, but they differ in their underlying principles and applications.
+
+### Transformers
+Architecture: Transformers are based on self-attention mechanisms, allowing them to capture dependencies between input tokens across various positions in the sequence.
+Applications: Transformers are widely used in natural language processing tasks such as language translation, text generation, sentiment analysis, and language understanding.
+Strengths: They excel at capturing long-range dependencies and contextual information from input sequences, making them effective for sequential data processing tasks.
+
+### Diffusion Models
+Architecture: Diffusion models are generative models based on the concept of iteratively diffusing noise throughout the input data to generate samples.
+Applications: Diffusion models are used in image generation, image inpainting, denoising, and other generative tasks where high-quality sample generation is required.
+Strengths: They are known for their ability to generate high-fidelity samples and perform image editing tasks such as inpainting and super-resolution.
+
+_In summary, while transformers are primarily used for sequence modeling and processing tasks in natural language processing, diffusion models are focused on generative tasks in computer vision and image processing. Each model has its strengths and is suited to different types of applications._
+
+---
