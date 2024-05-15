@@ -566,7 +566,7 @@ There have been several multi-modal foundation models available:
 
 Combining information from different modalities, multi-modal foundation models can provide more nuanced and contextually relevant responses compared to single-modal agents (see below pic for  application of multi-modal AI in medicine).
 
-![alt text](image24.gif)
+![alt text](image24.jpeg)
 [pic ref: slideteam.net] 
 
 
