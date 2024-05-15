@@ -545,3 +545,28 @@ Strengths: They are known for their ability to generate high-fidelity samples an
 _In summary, while transformers are primarily used for sequence modeling and processing tasks in natural language processing, diffusion models are focused on generative tasks in computer vision and image processing. Each model has its strengths and is suited to different types of applications._
 
 ---
+## what does ChatGPT-4o #chatgpt4o do?
+
+
+Multi-modal foundation models are advanced AI architectures which process and understand diverse types of data (text, images, audio, video and any combination of them) simultaneously. Such models, in fact, integrate NLP, image/audio/video-processing techniques to enrich understanding of contents across different modalities (multi-modal  enablement).
+
+
+There have been several multi-modal foundation models available:
+
+1- OpenAI's Contrastive Language-Image Pretraining (CLIP) model: associates images to texts and responses to either formats.
+
+2- Google's T5, Virtex as multimodal transformers: associates images, texts. 
+
+3- Google's Bidirectional Encoder Representations from Transformers (BERT): transformer-based architectures for multi-modal tasks.
+
+4- ChatGPT-4o ('o' for 'omni'): the most recent multi-modal AI agent that uses real-time human-like (emotional) speech and is capable of understanding texts, concepts, images, videos to discuss/analyze contents and interact amongst diverse modalities.
+
+.... 
+
+
+Combining information from different modalities, multi-modal foundation models can provide more nuanced and contextually relevant responses compared to single-modal agents (see below pic for  application of multi-modal AI in medicine).
+
+![alt text](image24.gif)
+[pic ref: slideteam.net] 
+
+
