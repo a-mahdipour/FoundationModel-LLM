@@ -13,8 +13,6 @@ based on predefined rules. Finally, it stores the detected fraud cases in a Mong
 Adjust the fraud detection logic according to your specific requirements.
 '''
 
-python
-Copy code
 import nltk
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
