@@ -1,0 +1,76 @@
+'''
+To create a system that converts prescription images to text and then analyzes the text using NLP to detect potential fraud, you'll need several components:
+
+Optical Character Recognition (OCR): To convert images to text.
+Natural Language Processing (NLP): To analyze the text and detect anomalies.
+Standard Format Checking: To compare the text against a standard prescription format.
+Here is a Python snippet that demonstrates this process:
+'''
+
+import pytesseract
+from PIL import Image
+import re
+import spacy
+from nltk.tokenize import word_tokenize, sent_tokenize
+
+# Load SpaCy model
+nlp = spacy.load("en_core_web_sm")
+
+# Function to perform OCR on an image
+def ocr_image(image_path):
+    image = Image.open(image_path)
+    text = pytesseract.image_to_string(image)
+    return text
+
+# Function to check prescription format and detect anomalies
+def check_prescription_format(text):
+    # Tokenize the text
+    sentences = sent_tokenize(text)
+    
+    # Define expected patterns in a standard prescription
+    patterns = {
+        'doctor_name': r'Dr\. [A-Za-z\s]+',
+        'patient_name': r'Patient: [A-Za-z\s]+',
+        'date': r'\d{2}/\d{2}/\d{4}',
+        'medications': r'\b(?:tablet|capsule|mg|ml)\b',
+        'signature': r'Signature: [A-Za-z\s]+'
+    }
+
+    detected_elements = {key: [] for key in patterns}
+    
+    # Extract information based on patterns
+    for key, pattern in patterns.items():
+        for sentence in sentences:
+            matches = re.findall(pattern, sentence, re.IGNORECASE)
+            if matches:
+                detected_elements[key].extend(matches)
+
+    # Example criteria for fraud detection
+    fraud_criteria = {
+        'doctor_name': lambda x: len(x) != 1,  # Expecting exactly one doctor name
+        'patient_name': lambda x: len(x) != 1,  # Expecting exactly one patient name
+        'date': lambda x: len(x) != 1,  # Expecting exactly one date
+        'medications': lambda x: len(x) == 0,  # Expecting at least one medication
+        'signature': lambda x: len(x) != 1  # Expecting exactly one signature
+    }
+
+    # Check for fraud based on criteria
+    fraud_detected = False
+    for key, check in fraud_criteria.items():
+        if check(detected_elements[key]):
+            fraud_detected = True
+            print(f"Fraud detected: Issue with {key}")
+    
+    return fraud_detected, detected_elements
+
+# Example usage
+image_path = 'prescription_image.jpg'  # Path to your prescription image
+text = ocr_image(image_path)
+print("Extracted Text:\n", text)
+
+fraud_detected, elements = check_prescription_format(text)
+if fraud_detected:
+    print("Potential fraud detected in the prescription.")
+else:
+    print("Prescription seems legitimate.")
+print("Detected Elements:\n", elements)
