@@ -569,4 +569,26 @@ Combining information from different modalities, multi-modal foundation models c
 ![alt text](image24.jpeg)
 [pic ref: slideteam.net] 
 
+---
+## What are the main architectural differences between GPT, BERT, Llama, T5 and other Gen AI models?
+
+The main architectural differences between various Generative AI models like GPT (e.g., GPT-3), BERT, LLAMA, T5, and others lie in their underlying structures and approaches to hashtag#nlp tasks:
+
+1- GPT models are based on the transformer architecture, consisting of stacked self-attention and feed-forward layers. GPT models are autoregressive and generate text sequentially, word by word, based on context from previous words. In fact, GPT uses a transformer decoder architecture and is trained with a left-to-right causal language modeling objective.
+
+2- BERT utilizes the Transformer architecture but employs a bidirectional approach, considering context from both left and right during pre-training.
+BERT is trained on masked language modeling and next sentence prediction tasks. More precisely BERT uses a transformer encoder architecture and is trained with a masked language modeling objective, which allows it to consider the context from both directions. BERT is widely used for various NLP tasks, including text classification, question answering, and named entity recognition.
+
+3- Llama is a language model architecture developed specifically for large-scale NLP applications. Llama also utilizes a decoder model that incorporates techniques such as dynamic vocabulary expansion and efficient parameter sharing to scale to large datasets. Llama aims to address efficiency and scalability concerns while maintaining high performance across various NLP tasks.
+
+4- T5 is a text-to-text transformer model that unifies different NLP tasks into a single framework. T5 frames all NLP tasks as text-to-text problems, where both inputs and outputs are textual using both encoder and decoder transformers.
+T5 can be fine-tuned for various tasks by providing task-specific prefixes during training.
+
+5- Other architectures may include variations of Transformers, such as XLNet, RoBERTa, and Transformer-XL, each with unique modifications and improvements. Some models may incorporate additional components like cross-attention mechanisms, layer normalization, or task-specific adaptations.
+
+![alt text](image30.jpeg)
+[pic ref: [slideteam.net](https://lnkd.in/gUG66Mxc)] 
+
+![alt text](image31.jpeg)
+[pic ref: [slideteam.net](https://lnkd.in/gUG66Mxc)] 
 
